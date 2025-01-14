@@ -11,8 +11,8 @@ COPY app /app
 RUN pip install --no-cache-dir qdrant-client
 
 # Define la variable de entorno (puedes sobrescribirla al ejecutar el contenedor)
-ENV QDRANT_URL="https://223e208e-ebb0-4620-bcda-6ac911ca659d.us-east4-0.gcp.cloud.qdrant.io"
-ENV QDRANT_API_KEY="OETw6acq4sq6t_vdb3LA4WCxP0qw88tBCGVj0PF1KdHGrYgw551bkQ"
+ENV QDRANT_URL=""
+ENV QDRANT_API_KEY=""
 
 # Comando predeterminado para ejecutar tu script
 CMD ["python", "qdrant.py"]
